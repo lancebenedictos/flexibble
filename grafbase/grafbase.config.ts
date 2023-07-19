@@ -7,8 +7,8 @@ const User = g
     email: g.string().unique(),
     avatarUrl: g.url(),
     description: g.string().optional(),
-    github: g.url().optional(),
-    linkedIn: g.url().optional(),
+    githubUrl: g.url().optional(),
+    linkedInUrl: g.url().optional(),
     projects: g
       .relation(() => Project)
       .list()
